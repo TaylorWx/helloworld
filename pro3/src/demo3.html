@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+  #div{background-color:red;width:200px;height:100px}
+</style>
+</head>
+<body>
+<div id="div"></div>
+</body>
+<script type="text/javascript">
+var id = document.getElementById("div");
+id.onmouseover=function(){
+	id.style.backgroundColor="green";
+};
+id.onmouseout=function(){
+	id.style.backgroundColor="black";
+};
+
+
+  
+</script>
+</html>

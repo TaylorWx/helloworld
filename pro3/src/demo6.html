@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ 
+</style>
+</head>
+<body>
+<div style="width:200px;height:100px;background-color:green; padding:50px;" onclick="fun2()">
+	<div style="width:100px;height:100px;background-color:red" onclick="fun1(event)"></div>
+</div>
+</body>
+<script type="text/javascript">
+function fun1(e){
+	alert("red");
+	if(e&&e.stopPropagation){
+		alert("22");
+		e.stopPropagation();
+		
+	};
+};
+
+
+function fun2(){
+	alert("green");
+};
+
+
+  
+</script>
+</html>

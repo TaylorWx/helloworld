@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ 
+</style>
+</head>
+<body>
+恭喜您注册成功，<span id="span" style="color:red">5</span>秒后返回首页,如果不返回请<a href="demo4.html">点击这里</a>
+</body>
+<script type="text/javascript">
+var num=5;
+var timer;
+timer=setInterval(function(){
+	var span = document.getElementById("span");
+	if(num>=2){
+		num--;
+		span.innerHTML=num;
+		
+		
+	}else{
+		clearInterval(timer);
+		location.href="demo4.html";
+	}
+},1000);
+  
+</script>
+</html>

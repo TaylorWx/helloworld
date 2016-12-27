@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<label for="txt">name</label>
+<input type="text" id="txt"/><span id="action"></span>
+</body>
+<script type="text/javascript">
+var txt = document.getElementById("txt");
+txt.onfocus=function(){
+	var span = document.getElementById("action");
+	span.innerHTML="用户名的格式不正确";
+	span.style.color="red";
+};
+txt.onblur=function(){
+	var span = document.getElementById("action");
+	span.innerHTML="用户名的格式";
+	span.style.color="green";
+}	
+
+
+  
+</script>
+</html>

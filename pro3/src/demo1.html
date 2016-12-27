@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<select id="city">
+	<option value="bj">北京</option>
+	<option value="sh">上海</option>
+	<option value="wu">武汉</option>
+</select>
+<select id="area">
+	<option>海定</option>
+	<option>朝阳</option>
+	<option>四合</option>
+</select>
+</body>
+<script type="text/javascript">
+	var select = document.getElementById("city");
+	select.onchange = function(){
+		var selectValue = select.value;
+	    switch(selectValue){
+			case 'bj': 
+	           var area = document.getElementById("area");
+	           area.innerHTML="<option>海定</option><option>朝阳</option><option>四合</option>";
+	        	break;
+			case 'sh':
+	var area = document.getElementById("area");
+	           area.innerHTML="<option>浦东</option><option>杨浦</option><option>闸北</option>";
+	        	break;
+			case 'wu':
+	var area = document.getElementById("area");
+	           area.innerHTML="<option>汉口</option><option>武昌</option><option>汉阳</option>";
+	       		 break;
+			default:
+				alert('error');
+		}
+	
+	
+};
+  
+</script>
+</html>
